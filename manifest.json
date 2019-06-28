@@ -1,0 +1,35 @@
+{
+   "author": "梁栩谦",
+   "background": {
+      "scripts": [ "asset/lib/jquery.js", "background.js" ]
+   },
+   "browser_action": {
+      "default_icon": "img/icon48.png",
+      "default_popup": "popup.htm",
+      "default_title": "亚马逊库存查询"
+   },
+   "content_scripts": [ {
+      "all_frames": true,
+      "css": [  ],
+      "js": [ "asset/lib/jquery.js", "content.js" ],
+      "matches": [ "*://*.amazon.com/*", "*://*.amazon.co.uk/*", "*://*.amazon.co.jp/*", "*://*.amazon.fr/*", "*://*.amazon.it/*", "*://*.amazon.es/*", "*://*.amazon.de/*", "*://*.amazon.ca/*", "*://*.amazon.com.mx/*", "*://*.amazon.com.br/*", "*://*.amazon.cn/*", "*://*.amazon.in/*", "*://*.amazon.nl/*", "*://*.amazon.tr/*", "*://*.amazon.com.au/*" ]
+   } ],
+   "description": "",
+   "externally_connectable": {
+      "matches": [ "*://*.amazon.com/*", "*://*.amazon.co.uk/*", "*://*.amazon.co.jp/*", "*://*.amazon.fr/*", "*://*.amazon.it/*", "*://*.amazon.es/*", "*://*.amazon.de/*", "*://*.amazon.ca/*", "*://*.amazon.com.mx/*", "*://*.amazon.com.br/*", "*://*.amazon.cn/*", "*://*.amazon.in/*", "*://*.amazon.nl/*", "*://*.amazon.tr/*", "*://*.amazon.com.au/*" ]
+   },
+   "icons": {
+      "128": "img/icon128.png",
+      "16": "img/icon16.png",
+      "48": "img/icon48.png"
+   },
+   "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAhhzVns0i+gxBqRX/SBNdV9QQYR4WFxeG5HaJ0yBn26pRcjZ0B1X3PiOdYo6xDWc+V3rykZdctzumUu5n6ak/De+w7nVzM2rvvTFLtZIhBZEuKDtAaCzZuQaDNX1q4YV9DEjvYSo1klohi1oeR7o7e4H2Yg5sWqosB6ShF6TZnjb6XqZiV7pvHdlb0n3dItlekXQkODBuTUQof/vxA8PxX8X6FvYBSkzLMuTzs5UYsUAtRQsjQZ5KOYt5+4H20MP7Thkj4gRPPjoAfPUy8x4Ov4c/uxQZgypdYI+hcmuyHeebC6cKWaxNAbIM3bkWubuOtNNPHytzRikEPAGWKVPuqQIDAQAB",
+   "manifest_version": 2,
+   "name": "亚马逊库存查询",
+   "options_page": "options.htm",
+   "permissions": [ "notifications", "cookies", "contextMenus", "webRequest", "webRequestBlocking", "tabs", "storage", "activeTab", "https://*.amazon.com/", "http://*.amazon.com/", "*://*.amazon.com/*", "*://*.amazon.co.uk/*", "*://*.amazon.co.jp/*", "*://*.amazon.fr/*", "*://*.amazon.it/*", "*://*.amazon.es/*", "*://*.amazon.de/*", "*://*.amazon.ca/*", "*://*.amazon.com.mx/*", "*://*.amazon.com.br/*", "*://*.amazon.cn/*", "*://*.amazon.in/*", "*://*.amazon.nl/*", "*://*.amazon.tr/*", "*://*.amazon.com.au/*" ],
+   "short_name": "AmazonStockQuery",
+   "update_url": "https://clients2.google.com/service/update2/crx",
+   "version": "0.21",
+   "web_accessible_resources": [ "main.htm", "img/qr.jpg", "asset/lib/unsafeWindows.js" ]
+}

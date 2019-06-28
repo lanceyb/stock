@@ -1,0 +1,39 @@
+.btn {
+    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    touch-action: manipulation;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    padding: 6px 12px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: transparent;
+    border-image: initial;
+    border-radius: 4px;
+}
+
+.btn-info {
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 176, 213);
+    border-color: rgb(38, 154, 188);
+}
+
+.btn-info:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(49, 176, 213);
+    border-color: rgb(38, 154, 188);
+}
+
+.btn.active, .btn:active {
+    background-image: none;
+    box-shadow: rgba(0, 0, 0, 0.125) 0px 3px 5px inset;
+    outline: 0px;
+}
+
